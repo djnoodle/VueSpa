@@ -1,3 +1,4 @@
+
 <script></script>
 <template>
     <div id="wrapper-hero">
@@ -6,12 +7,12 @@
             class="img-fluid"
             alt="spa"
         />
-    </div>
-    <div class="centerd">
-        <h1>Tag hand om dig.</h1>
+        <div class="centered">
+            <h1>Tag hand om dig.</h1>
+        </div>
     </div>
 </template>
-<style scope>
+<style scoped>
     #wrapper-hero img {
         margin: 0 auto;
         height: auto;

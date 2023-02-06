@@ -1,11 +1,10 @@
 <script setup>
     import { RouterLink, RouterView } from 'vue-router'
 </script>
-
 <template>
-    <nav class="navbar bg-light fixed-top">
+    <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
-            <RouterLink class="navbar-brand" to="/">Spa app</RouterLink>
+            <RouterLink class="navbar-brand" to="/">SPA App</RouterLink>
             <button
                 class="navbar-toggler"
                 type="button"
@@ -23,7 +22,7 @@
             >
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                        Spa
+                        SPA
                     </h5>
                     <button
                         type="button"
@@ -42,9 +41,11 @@
                                 >Home</RouterLink
                             >
                         </li>
-                        <RouterLink class="nav-link" to="/about"
-                            >About</RouterLink
-                        >
+                        <li class="nav-item">
+                            <RouterLink class="nav-link" to="/about"
+                                >About</RouterLink
+                            >
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -52,7 +53,6 @@
     </nav>
     <RouterView />
 </template>
-
 <style scoped>
     .offcanvas-title {
         color: black;
